@@ -1,0 +1,38 @@
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 40px;
+}
+.hero-buttons{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    padding: 14px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.primary-btn{
+    background: #2563eb;
+    color:white;
+}
+
+.secondary-btn{
+    background: #e5e7eb;
+}

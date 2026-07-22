@@ -6,5 +6,5 @@ A marketplace where students can buy and sell products inside their college.
 
 - React
 - Node.js
-- Express
+- Expr
 - MongoDB
