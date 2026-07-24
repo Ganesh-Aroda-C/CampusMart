@@ -11,7 +11,7 @@ function Hero() {
             <div className="hero-buttons">
                 <button className="primary-btn">Browse Products</button>
 
-                <button className="secondar-btn">Sell an Itme</button>
+                <button className="secondar-btn">Sell an Item</button>
             </div>
         </section>
 
