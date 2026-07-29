@@ -1,24 +1,33 @@
 import { useParams } from "react-router-dom";
 import products from "../data/products";
 import "./ProductDetails.css"
+import Navbar from "./Navbar";
+import ProductCard from "./ProductCard";
+
+
 function ProductDetails() {
     const { id } = useParams();
     const productId = Number(id);
 
     const product = products.find(product => product.id === productId);
-
+    const relatedProducts = products.filter(
+    product => product.id !== productId
+);
     if (!product) {
     return <h1><strong>Product Not Found</strong></h1>;
 }
     return (
         <>
-        
+         <Navbar />
     <div className="product-details-container">
 
         <div className="product-left">
 
-            <div className="product-icon">
-                {product.icon}
+            <div className="product-image">
+                <img
+                    src={product.image}
+                    alt={product.name}
+                />
             </div>
 
         </div>
@@ -29,18 +38,25 @@ function ProductDetails() {
 
             <h2><strong>₹{product.price}</strong></h2>
 
-            <p>
-                <strong>Category:</strong> {product.category}
-            </p>
+            <div className="product-meta">
 
-            <p>
-                <strong>Condition:</strong> {product.condition}
-            </p>
+                <span className="category">
+                    {product.category}
+                </span>
 
-            <p>
-                <strong>Seller:</strong> {product.seller}
-            </p>
+                <span className="condition">
+                    {product.condition}
+                </span>
 
+            </div>
+
+            <div className="seller-card">
+
+                <h4>Seller</h4>
+
+                <p>{product.seller}</p>
+
+            </div>
             <h3>Description</h3>
 
             <p>{product.description}</p>
@@ -52,7 +68,25 @@ function ProductDetails() {
         </div>
 
     </div>
+       
+    <div className="related-products">
 
+        <h2 className="products-title">
+            Related Products
+        </h2>
+
+        <div className="products-container">
+
+            {relatedProducts.map(product => (
+                <ProductCard
+                    key={product.id}
+                    product={product}
+                />
+            ))}
+
+        </div>
+
+    </div>
             
         </>
     );

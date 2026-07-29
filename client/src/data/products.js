@@ -1,7 +1,14 @@
+import laptop from "../assets/images/products/laptop.jpeg";
+import iphone from "../assets/images/products/iphone-17.jpeg";
+import book from "../assets/images/products/maths.jpeg";
+import headphones from "../assets/images/products/headphones.jpeg";
+import chair from "../assets/images/products/chair.jpg";
+import watch from "../assets/images/products/watch.jpeg";
+
 const products = [
     {
         id: 1,
-        icon: "💻",
+        image: laptop,
         name: "Lenovo ThinkPad E14",
         price: 35000,
         category: "Electronics",
@@ -11,7 +18,7 @@ const products = [
     },
     {
         id: 2,
-        icon: "📱",
+        image: iphone,
         name: "iPhone 12",
         price: 28000,
         category: "Mobiles",
@@ -21,7 +28,7 @@ const products = [
     },
     {
         id: 3,
-        icon: "📚",
+        image: book,
         name: "Engineering Mathematics Book",
         price: 450,
         category: "Books",
@@ -31,7 +38,7 @@ const products = [
     },
     {
         id: 4,
-        icon: "🎧",
+        image: headphones,
         name: "Boat Rockerz 550",
         price: 1800,
         category: "Accessories",
@@ -41,7 +48,7 @@ const products = [
     },
     {
         id: 5,
-        icon: "🪑",
+        image: chair,
         name: "Study Chair",
         price: 2200,
         category: "Furniture",
@@ -51,7 +58,7 @@ const products = [
     },
     {
         id: 6,
-        icon: "⌚",
+        image: watch,
         name: "Noise Smart Watch",
         price: 2500,
         category: "Wearables",

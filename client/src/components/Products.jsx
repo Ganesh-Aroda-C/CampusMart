@@ -4,17 +4,24 @@ import products from "../data/products";
 function Products() {
 
     return (
-    <>
-        <h2 className="products-title">Featured Products</h2>
-        <section className="products-container">
-            {products.map((product) => (
-                <ProductCard
-                    key={product.id}
-                    product={product}
-                />
-            ))}
-        </section>
-    </>
+    <section className="products-section">
+
+    <h2 className="products-title">
+        Latest Products
+    </h2>
+
+    <div className="products-container">
+
+        {products.map(product => (
+            <ProductCard
+                key={product.id}
+                product={product}
+            />
+        ))}
+
+    </div>
+
+</section>
     );
 }
 
