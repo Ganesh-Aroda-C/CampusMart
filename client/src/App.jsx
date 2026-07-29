@@ -1,3 +1,4 @@
+import SellItem from "./pages/SellItem";
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -18,6 +19,7 @@ function App() {
         } 
       />
       <Route path="/product/:id" element={<ProductDetails />} />
+      <Route path="/sell" element={<SellItem />}/>
     </Routes>
   );
 }

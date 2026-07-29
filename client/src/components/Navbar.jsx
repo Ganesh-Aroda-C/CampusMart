@@ -2,7 +2,9 @@ import "./Navbar.css"
 function Navbar(){
     return (
         <nav className="navbar">
-            <div className="logo">Campusmart</div>
+            <h1 className="logo">
+    Campus<span>Mart</span>
+</h1>
               
             <ul className="nav-links">
                 <li>HOME</li>

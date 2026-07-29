@@ -14,7 +14,9 @@
     color: white;
 
 }
-
+.logo span{
+    color:#3b82f6;
+}
 .logo{
     font-size: 30px;
     font-weight: bold;
