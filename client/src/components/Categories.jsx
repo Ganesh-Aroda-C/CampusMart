@@ -1,4 +1,4 @@
-import './categories.css'
+import '../App.css';
 function handleCategoryClick(category) {
     alert(`You clicked on ${category.name}`);
 }

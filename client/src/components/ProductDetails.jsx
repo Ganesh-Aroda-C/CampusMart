@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import products from "../data/products";
-import "./ProductDetails.css"
+import '../App.css';
 import Navbar from "./Navbar";
 import ProductCard from "./ProductCard";
 
