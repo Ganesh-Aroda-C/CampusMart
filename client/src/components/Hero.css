@@ -4,13 +4,14 @@
 }
 
 .hero h1{
+    color:black;
     font-size: 48px;
     margin-bottom: 20px;
 }
 
 .hero p{
     font-size: 20px;
-    color: gray;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
 .hero-buttons{

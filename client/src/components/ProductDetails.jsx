@@ -8,7 +8,7 @@ function ProductDetails() {
     const product = products.find(product => product.id === productId);
 
     if (!product) {
-    return <h1>Product Not Found</h1>;
+    return <h1><strong>Product Not Found</strong></h1>;
 }
     return (
         <>
@@ -25,9 +25,9 @@ function ProductDetails() {
 
         <div className="product-right">
 
-            <h1>{product.name}</h1>
+            <h1><strong>{product.name}</strong></h1>
 
-            <h2>₹{product.price}</h2>
+            <h2><strong>₹{product.price}</strong></h2>
 
             <p>
                 <strong>Category:</strong> {product.category}
